@@ -1,0 +1,10 @@
+resources:
+- name: source
+  type: git
+  source:
+    uri: https://github.com/baszalmstra/concourse-git-concourse-recursive-repro.git
+    
+jobs:
+- name: test
+  plan:
+    - get: source
